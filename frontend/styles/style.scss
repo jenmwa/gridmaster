@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@import './components/general';
+
+@import './components/header';
+@import './components/chatAside';
+@import './components/footer';
+
+@import './components/buttons';
+@import './components/inputs';
+
+@import './components/startMain';
+@import './components/roomlist';
+@import './components/gridGame';
+@import './components/howToPlay';
+
+@import './components/scores';
+@import './components/timer';
+@import './components/modal';
+@import './components/userInGame';
+
+@import './components/lightmode'
+
+// @import './components/darkmode'
+
+
+

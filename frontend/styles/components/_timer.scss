@@ -1,0 +1,10 @@
+.countdown,
+.game-timer {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4rem;
+  color: whitesmoke;
+  text-align: center;
+}

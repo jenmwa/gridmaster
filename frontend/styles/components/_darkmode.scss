@@ -1,0 +1,109 @@
+$textBackground: #272C32;
+$serverBackground: #31353D;
+$mainBackgroundColor: #1D2126;
+$secondaryBackgroundColor: #21252b;
+$thirdBackgroundColor: #D2D3D4;
+//$headingTextColor: #8e9093;
+
+$accessoryColor: #813333;
+
+$white: whitesmoke;
+
+
+
+	body.dark {
+			background-color: $textBackground;
+
+			header {
+					background-color: $mainBackgroundColor;
+					color: $white;
+			}
+
+			main {
+					background-color: $secondaryBackgroundColor;
+					color: $white;
+			}
+
+			input {
+					background-color: $textBackground;
+					color: $white;
+			}
+
+			footer {
+					background-color: $secondaryBackgroundColor;
+					color: $thirdBackgroundColor;
+			}
+
+			// button,
+			// .btn {
+
+
+			// 		color: $white;
+
+
+			// 		// &:hover {
+			// 		// 		background-color: #551f1f;
+
+			// 		// }
+
+			// 		&:active {
+			// 				background-color: rgb(24, 24, 24);
+			// 		}
+
+			// 		&:disabled {
+			// 				background-color: $textBackground;
+			// 				color: grey;
+			// 				;
+
+			// 				&:hover {
+			// 						background-color: $textBackground;
+			// 						font-weight: normal;
+			// 						border: 1 solid black;
+			// 				}
+			// 		}
+
+			// 		// &.showChat {
+			// 		// 		background-color: #551f1f;
+			// 		// 		font-weight: bold;
+
+			// 		// }
+			// }
+
+			.parent {
+					background-color: $secondaryBackgroundColor;
+			}
+
+			.chat {
+
+					background-color: $mainBackgroundColor;
+					color: #D2D3D4;
+
+					.chat-container {
+							background-color: $mainBackgroundColor;
+					}
+
+					// button {
+					// 		background-color: $textBackground;
+					// 		color: $white;
+					// }
+
+					::-webkit-scrollbar {
+							background-color: $mainBackgroundColor;
+					}
+
+					::-webkit-scrollbar-thumb {
+							background-color: $thirdBackgroundColor;
+					}
+			}
+
+			.countdown,
+			.game-timer {
+
+					color: whitesmoke;
+
+			}
+
+			.rooms-container .btn {
+					background-color: $serverBackground;
+			}
+	}

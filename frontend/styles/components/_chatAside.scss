@@ -1,0 +1,183 @@
+@import "./general";
+
+.chat {
+  grid-area: 2 / 4 / 11 / 5;
+	background-color: $mainBackgroundColor;
+	color: #D2D3D4;
+  height: 100vh;
+  height: 100%;
+  min-width: 420px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.scroll-container {
+  width: 100%;
+  padding-bottom: 30px;
+  white-space: nowrap;
+  overflow: auto;
+  clip-path: inset(0 0 30px 0);
+}
+
+.item {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  margin-right: 10px;
+  background-color: none;
+  border-radius: 50%;
+
+  .user-color-circle {
+    margin: 4px 0;
+    width: 65px;
+    height: 65px;
+    background-color: $white;
+    border: 2px solid $black;
+    box-shadow: 0.15rem 0.15rem $black;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  p {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 5px 0;
+  }
+}
+
+.chat-btn-wrapper {
+  width: 100%;
+  display: flex;
+
+  button , .light, .button {
+    width: 33.34%;
+    height: 44px;
+    background-color: $mainBackgroundColor;
+    color: $white;
+
+    &:disabled {
+      color:grey;
+      border: 2px solid grey;
+      transition: none;
+
+      &:hover {
+        background-color: transparent;
+        color:grey;
+        font-weight: bolder;
+        border: 2px solid grey;
+        box-shadow: 0.15rem 0.15rem #2b2b2b;
+      }
+    }
+    &.active-chat-btn {
+      box-shadow: 0px 0px 3px 3px rgba(192, 153, 197, 0.75) inset;
+      background-color: $mainBackgroundColor;
+      color: $white;
+      cursor: pointer;
+      
+        &:disabled {
+          color: $white;
+          border: 2px solid grey;
+          transition: none;
+          box-shadow: 0.15rem 0.15rem #2b2b2b;
+      
+          &:hover {
+            background-color: transparent;
+            font-weight: bold;
+            color: $white;
+            font-weight: normal;
+            border: 2px solid grey;
+            box-shadow: 0.15rem 0.15rem #2b2b2b;
+          }
+        }
+    }
+  }
+}
+
+.chat-container {
+  height: 100%;
+  background-color: $mainBackgroundColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: auto;
+  flex: auto;
+
+  ::-webkit-scrollbar {
+    background-color: $mainBackgroundColor;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $thirdBackgroundColor;
+  }
+}
+
+.messages {
+  flex: 1;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 1rem;
+}
+
+.message {
+  color: $white;
+  align-self: flex-end;
+  position: relative;
+}
+
+.send-message {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 8px 8px 0 8px;
+  text-align: right;
+  align-self: flex-end;
+  max-width: 80%;
+}
+
+.receive-message {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 8px 8px 8px 0;
+  text-align: left;
+  align-self: flex-start;
+  max-width: 80%;
+}
+
+.send-button {
+  height: 36px;
+  width: 100%;
+  border: 2px solid $black;
+  transition: 0.3s ease-in-out;
+  background-color: $textBackground;
+  color: $white;
+
+
+  &:hover {
+    background-color: $textBackground;
+    color: white;
+    font-weight: bold;
+    border: 2px solid grey;
+    box-shadow: 0.15rem 0.15rem #2b2b2b;
+  }
+
+  &:active {
+    background-color: $secondaryBackgroundColor;
+  }
+}
+
+.story-highlights {
+  text-align: -webkit-center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: $mainBackgroundColor;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $thirdBackgroundColor;
+  border-radius: 50px;
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5) inset;
+}
